@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*
+    em HTML id corresponde a # (só se pode ter um elemento por página)
+    em HTML class corresponde a . (pode se ter mais que uma numa página)
+*/
+
+body {
+    background-color: rgba(103, 180, 103, 0.377);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(15, 52, 77);
+}
+
+#principal {
+    text-align: center;
+    color: rgb(26, 70, 55);
+    text-shadow: 1px 1px 2px #023d278a;
+}
+
+h2 {
+    color: rgb(65, 87, 33);
+}
+
+.basico {
+    color: green;
+}
+
+.intermedio {
+    color: rgb(156, 156, 18);
+}
+
+.avancado {
+    color: red;
+}
