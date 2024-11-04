@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse; /* Junta as bordas das células */
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            vertical-align: middle; /* Alinha o texto ao topo da célula */
+        }
+
+        tr.l1 {
+            background-color: lightblue;
+        }
+
+        tr.l3 {
+            background-color: lightblue;
+        }
+
+        tr.l2 {
+            background-color: lightgreen;
+        }
+
+        tr.l4 {
+            background-color: lightgreen;
+        }
+
+        td#d2 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>A minha primeira tabela</h1>
+    <table>
+        <tr class="l1">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="l2">
+            <td>A2</td>
+            <td id="d2">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="l3">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="l4">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>

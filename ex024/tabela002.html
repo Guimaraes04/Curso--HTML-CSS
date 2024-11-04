@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightskyblue;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead {
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+
+        .num{
+            text-align: right;
+            width: 150px;
+        }
+
+        tfoot{ 
+            background-color: rgb(59, 59, 59);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Áreas dos estados brasileiros</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Área (km2)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">1 559 167,889</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">1 247 689,515</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">903 357,908</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">586 522,122</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">564 692,669</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">357 145,534</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">340 086,698</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td>5 559 662,335</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
