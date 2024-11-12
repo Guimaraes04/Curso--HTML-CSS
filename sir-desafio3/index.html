@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <script type="text/javascript" src="loadloc.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>Using CSS to style an HTML Form</header>
+    <article>
+      <div>
+        <form id="myform" action="">
+          <fieldset id="personal_information" class="fieldset1" name="Personal_Information">
+            <legend>Personal Information</legend>
+            <label for="title">Title</label>
+            <select name="title" id="title">
+              <option value="Mr">Mr.</option>
+              <option value="Mrs">Mrs.</option>
+              <option value="Ms">Ms.</option>
+            </select>
+            <label for="first name">First name</label>
+            <input type="text" id="first_name" placeholder="Your first name here" />
+            <label for="last name">Last name</label>
+            <input type="text" id="last_name" placeholder="Your last name here" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email here" />
+          </fieldset>
+
+          <fieldset id="address" name="Address" disabled>
+            <legend>Address</legend>
+            <label for="street">Street</label>
+            <input type="text" placeholder="street, number, apartment" />
+            <label for="city">City</label>
+            <input type="text" placeholder="City" />
+            <label for="state">State/Region</label>
+            <input type="text" placeholder="State" />
+            <label for="postal code">Postal code</label>
+            <input type="text" placeholder="XXXX-XXX" />
+            <label for="country">Country</label>
+            <select id="loc" name="country1"></select>
+          </fieldset>
+
+          <fieldset id="payment_details" name="Payment_Details" disabled>
+            <legend>Payment details</legend>
+            <fieldset id="credit_card">
+              <legend>Credit Card</legend>
+              <label for="card_type">Card Type</label>
+              <input type="radio" name="card_type" />American Express
+              <input type="radio" name="card_type" />Mastercard
+              <input type="radio" name="card_type" />Visa
+              <input type="radio" name="card_type" />SAS Card
+            </fieldset>
+            <label for="card number">Card number</label>
+            <input type="text" placeholder="Card number" />
+            <label for="expiry date">Expiry Date</label>
+            <input type="text" placeholder="MM/YYYY" />
+            <label for="cvv">CVV</label>
+            <input type="text" placeholder="XXX" />
+            <fieldset id="terms">
+              <legend>Terms and Conditions</legend>
+              <input type="checkbox" id="terms_checkbox" />I accept to the terms and conditions
+              <input type="submit" id="submit_button" value="Submit my details" />
+            </fieldset>
+          </fieldset>
+        </form>
+      </div>
+    </article>
+    <footer>Hugo Gonçalves Guimarães, nº29142</footer>
+  </body>
+</html>
