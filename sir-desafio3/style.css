@@ -1,78 +1,93 @@
+:root {
+    --color1: #C5DEFF;
+    --color2: #DAECFF;
+    --color3: #FF6347;
+    --color4: #3EA45D;
+    --color5: #007BFF;
+    --color6: white;
+    --color7: black;
+    --color8: #ccc;
+    --color9: #0056b3;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
 }
 
-body {
-    background-color: white;
-}
-
-header {
+header, footer {
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
-article {
-    background-color: #C5DEFF;
-    display: flex;
-    justify-content: center;
+form {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--color1);
+    border-radius: 1em;
 }
 
 fieldset {
-    background-color: #DAECFF;
-    width: 60vw;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 15px;
+    background-color: var(--color2);
+    border: 1px solid var(--color8);
+    position: relative;
+    border-radius: 1em;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 legend {
-    color: white;
-    background-color: #FF6347;
-    border: 1px solid #3EA45D;
-    padding: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
+    color: var(--color6);
+    background-color: var(--color3);
+    border: 1px solid var(--color4);
+    border-radius: 2em;
+    padding: 0 10px;
 }
 
-/* Alterar */
-select {
-    background-color: white;
-    color: black;
-    width: 70vw;
-    padding: 8px;
-    border-radius: 8px;
-}
-
-input {
-    background-color: white;
-    color: black;
-    width: 70vw;
-    padding: 8px;
-    border-radius: 8px;
+label {
     display: block;
-    margin-bottom: 10px;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    background-color: var(--color6);
+    border: 1px solid var(--color8);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 1em;
 }
 
 input[type="submit"] {
-    background-color: #007BFF;
-    color: white;
-    width: 70vw;
+    color: var(--color6);
+    background-color: var(--color5);
+    padding: 0.6em;
+    border-radius: 1em;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+label[for="card_type"] {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"] {
+    margin-right: 0.5em;
 }
 
 input[type="submit"]:hover {
-    background-color: #0057b3ac;
-}
-
-footer {
-    text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    color: black;
-    bottom: 0;
-    width: 100%;
+    background-color: var(--color9);
 }
